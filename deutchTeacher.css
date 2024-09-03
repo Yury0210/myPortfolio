@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Neucha;
+}
+@font-face {
+  font-family: Neucha;
+  src: url("./assets/font/neucha.otf");
+}
+.wrapper {
+  background-image: url(./assets/image/deutchTeacher/wrapper.png);
+  background-repeat: cover;
+
+  height: 1820px;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header_container {
+  padding: 30px;
+  width: 1500px;
+}
+.header {
+  margin: 0 auto;
+}
+.header a {
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  color: #6380a9;
+
+  transition: transform 0.5s ease;
+}
+
+.header a:hover {
+  transform: scale(1.15);
+}
+.container {
+  padding: 20px 200px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #6380a9;
+}
+.description h1 {
+  font-size: 90px;
+}
+.description p {
+  font-size: 60px;
+  margin-top: -10px;
+}
+.description img {
+  margin: 5px;
+  border: 3px solid #e676b1;
+  border-radius: 100%;
+}
+.description a {
+  display: inline-block;
+  text-decoration: none;
+  color: #5a5555;
+  font-size: 20px;
+  transition: transform 0.5s ease;
+}
+.description a:hover {
+  transform: scale(1.15);
+}
+.content_descr {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slide-in {
+  0% {
+    left: -800px; /* Начальная позиция для выезда */
+    opacity: 0; /* Начальная невидимость */
+  }
+  100% {
+    left: -580px; /* Конечная позиция */
+    opacity: 1; /* Полная видимость */
+  }
+}
+@keyframes slide-in2 {
+  0% {
+    right: -800px; /* Начальная позиция для выезда */
+    opacity: 0; /* Начальная невидимость */
+  }
+  100% {
+    right: -650px; /* Конечная позиция */
+    opacity: 1; /* Полная видимость */
+  }
+}
+@keyframes slide-in3 {
+  0% {
+    right: -600px; /* Начальная позиция для выезда */
+    opacity: 0; /* Начальная невидимость */
+  }
+  100% {
+    right: -450px; /* Конечная позиция */
+    opacity: 1; /* Полная видимость */
+  }
+}
+.cloud1 {
+  position: absolute;
+  transform: scaleX(-1);
+  animation: slide-in 2s ease-out forwards;
+}
+
+.cloud2 {
+  position: absolute;
+  transform: scaleX(-1);
+  animation: slide-in2 3s ease-out forwards;
+}
+.cloud3 {
+  position: absolute;
+
+  top: 400px;
+  animation: slide-in3 4s ease-out forwards;
+}
+.before_frame {
+  margin-top: 350px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.before {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  text-align: center;
+  top: 68px;
+}
+.before h2 {
+  color: #6380a9;
+  font-weight: 200;
+  font-size: 50px;
+}
+.jump {
+}
